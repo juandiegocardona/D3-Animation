@@ -38,7 +38,7 @@ const bars = g
   .enter()
   .append("rect")
   .attr("class", "bar")
-  .attr("fill", "green")
+  .attr("fill", "pink")
   .attr("x", (d) => x(d.name))
   .attr("y", (d) => y(d.index2005))
   .attr("height", (d) => iheight - y(d.index2005))
@@ -48,7 +48,7 @@ d3.select("#anio2005").on("click", function () {
   bars
     .transition()
     .attr("class", "bar")
-    .attr("fill", "green")
+    .attr("fill", "pink")
     .attr("x", (d) => x(d.name))
     .attr("y", (d) => y(d.index2005))
     .attr("height", (d) => iheight - y(d.index2005))
